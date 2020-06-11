@@ -46,6 +46,8 @@ function printXor0() {
       if (gameOver()) {
         document.querySelector("#result").innerText =
           "Game Over " + (flag ? "X" : "0") + " Win";
+      } else if (count == 9) {
+        document.querySelector("#result").innerText = "Game Draw";
       }
     }
     flag = !flag;
